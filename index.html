@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        color: #fff;
+ 
+    }
+
+    body {
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    button {
+        color: black;
+        background: RED;
+        text-shadow: none;
+        width: 100%;
+        height: 50px;
+        transition: all 1s;
+    }
+
+    button:hover {
+        color: pink;
+        font-size: 35px;
+        ;
+        border: 10px dotted red;
+        background: orange;
+
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 1rem;
+        align-items: start;
+        justify-items: start;
+        height: 100%;
+        grid-template-rows: auto 1fr
+    }
+
+    section {
+        text-shadow: none;
+        color: black;
+        font-weight: bolder;
+    }
+
+    img {
+        height: 100%;
+        box-shadow: 10px 5px 5px red;
+        height: 400px;
+        animation: move 10s linear infinite;
+
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateY(0%);
+        }
+
+        50% {
+            transform: translateY(100%);
+
+        }
+
+        100% {
+            transform: translateY(0%);
+
+        }
+    }
+</style>
+
+<body>
+    <main>
+        <h1>LOTTAS PROFESSIONELLA TANK O SNUSSERVICE</h1>
+        <div>
+            <img src="iotta.png" />
+        </div>
+        <section>
+            <h1>TJÄNSTER:</h1>
+
+            <div>
+                <p>TANKNING MED FOKUS OCH PRATAR PÅ DISCORD: 9999g eller 500dosor knox lös</p>
+                <button disabled>LÄGG TILL I KUNDVAGN (kommer snart)</button>
+            </div>
+            <div>
+                <p>TANKNING UTAN FOKUS OCH UTAN DISCORD: 8888g eller 5000dosor knox lös</p>
+                <button disabled>LÄGG TILL I KUNDVAGN (kommer snart)</button>
+            </div>
+            <div>
+                <p>TANKNING UTAN FOKUS GÅR AFK GANSKA OFTA: 7000g 50s 30c</p>
+                <button disabled>LÄGG TILL I KUNDVAGN (kommer snart)</button>
+            </div>
+            <div>
+                <p>DPS UTAN FOKUS GÅR AFK GANSKA OFTA: 7000g 50s 30c</p>
+                <button disabled>LÄGG TILL I KUNDVAGN (kommer snart)</button>
+            </div>
+            <div>
+                <p>BARA PRATA PÅ DISCORD: 7000g 50s 30c</p>
+                <button disabled>LÄGG TILL I KUNDVAGN (kommer snart)</button>
+            </div>
+            <div>
+                <p>INNE PÅ DISCORD MEN PRATAR INTE: 7000g 50s 30c</p>
+                <button disabled>LÄGG TILL I KUNDVAGN (kommer snart)</button>
+            </div>
+            <div>
+                <p>INNE PÅ DISCORD MEN PRATAR INTE MEN SNUSAR: 7000g 50s 30c</p>
+                <button disabled>LÄGG TILL I KUNDVAGN (kommer snart)</button>
+            </div>
+        </section>
+        </div>
+    </main>
+</body>
+
+</html>
